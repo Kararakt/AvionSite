@@ -1,0 +1,385 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#menu ul li{
+    cursor: pointer;
+    color: #726E8D;
+    font-size: 1.5rem;
+}
+a.router-link-active,
+li.router-link-active > a {
+  color: #22202E;
+}
+.delivery{
+    display: none;
+}
+
+.firstBtn{
+    padding: 1.5rem 3rem ;
+    background-color: rgba(249, 249, 249, 0.15);
+    font-size: 1.2rem;
+}
+.firstBtn:hover,
+.firstBtn:active,
+.firstBtn:focus{
+    background-color: #4E4D93;
+}
+.secondBtn{
+    color: #4E4D93;
+    background-color: #F9F9F9;
+    padding: 1.5rem 3rem;
+    font-size: 1.2rem;
+}
+.secondBtn:hover,
+.secondBtn:active,
+.secondBtn:focus{
+    background-color: #EBE8F4;
+}
+.checkBox .el-checkbox .el-checkbox__label,
+.checkBox .el-checkbox__input.is-checked+.el-checkbox__label {
+    color: #2A254B;
+    font-size: 1.35rem;
+}
+.checkBox .el-checkbox__input.is-checked .el-checkbox__inner{
+    background-color: #4E4D93 ;
+    border-color: #4E4D93
+}
+.checkBox .el-checkbox__inner:hover{
+    border-color: #4E4D93;
+}
+.checkBox .el-checkbox__original:focus-visible+.el-checkbox__inner{
+    outline: 0rem;
+}
+.checkBox .el-checkbox__inner{
+    height: 1rem;
+    width: 1rem;
+}
+.borderBottom{
+    border-bottom: 2px solid #4E4D93;
+}
+.quantityCount{
+    display: flex;
+    justify-content: center;
+    gap:1rem;
+    background-color: #CAC6DA;
+    padding: 1rem 2rem;
+    width: 10.5rem;
+}
+.disabledCount{
+    color: #F9F9F9;
+    cursor: not-allowed;
+}
+.thirdBtn{
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: #2A254B;
+    color: white;
+}
+.thirdBtn:hover,
+.thirdBtn:active,
+.thirdBtn:focus{
+    background-color: #4E4D93;
+}
+.customRadiusColor{
+    border: 2px solid #4E4D93 ;
+    border-radius: 2rem;
+}
+.labelForm{
+    font-size: 1.5rem;
+    color: #2A254B;
+}
+.customInput .el-form-item .el-input__wrapper {
+    background-color: #4E4D93;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    box-shadow: none;
+}
+.customInput .el-form-item  .el-input__inner::placeholder,
+.customInput .el-form-item  .el-input__inner{
+    color: white;
+}
+.customInput .el-form-item__error{
+    font-size: 1.4rem;
+}
+.fourthBtn{
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: #4E4D93;
+    color: white;
+}
+.fourthBtn:hover,
+.fourthBtn:active,
+.fourth:focus{
+    background-color: #2A254B;
+}
+.mainDivApp{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.contentRouter{
+    flex-grow: 1;
+}
+.collapse-enter-active {
+    transition: all 0.4s ease-out;
+}
+  .collapse-enter-from,
+  .collapse-leave-to {
+    transition: all 0.4s ease-out;
+    opacity: 0;
+}
+  .collapseVisible{
+    transition: all 0.4s ease-out;
+}
+  .collapseVisibleActive{
+    transform: rotate(90deg);
+    transition: all 0.4s ease-out;
+}
+.bgCollapse{
+    background-color: #F9F9F9;
+    border-radius: 2rem;
+}
+.collapseRadius{
+    border-radius: 0rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+.bgContentCollapse{
+    background-color: #F9F9F9;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+.hiddenCollapseFilter{
+    display: none;
+}
+@media (max-width:500px){
+    .clearPadding{
+        padding: 1rem;
+    }
+    .textCenter{
+        text-align: center;
+    }
+    .clearFlex{
+        display: flex;
+        flex-direction: column;
+    }
+    .clearAlign{
+        display: flex;
+        align-items: center;
+    }
+    .customPadding{
+        padding: 2rem 1rem;
+    }
+    .clearGridTwo{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .secondCustomPadding{
+        padding: 0rem;
+        padding: 0rem 1rem;
+        padding-bottom: 4rem;
+    }
+    .textFont{
+        font-size: 1.2rem;
+    }
+    .clearGap{
+        gap:0.5rem;
+    }
+    .paddingLeft{
+        padding-left: 0.5rem;
+    }
+    .secondGap{
+        gap:1.5rem;
+    }
+    .hiddenFilter{
+        display: none;
+    }
+    .imagePlant{
+        height: 15rem;
+    }
+    .textPic{
+        font-size: 2.5rem;
+    }
+    .hiddenCollapseFilter{
+        display: block;
+    }
+    .paddingXSmall{
+        padding: 0.5rem;
+    }
+    .textStart{
+        text-align: start;
+    }
+    .customInput .el-form-item__error{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .secondText{
+        font-size: 2rem;
+    }
+}
+
+
+@media(min-width:501px) and (max-width:800px){
+    .customFlex{
+        display: flex; 
+        flex-direction: column;
+    }
+    .clearPadding{
+        padding: 1rem;
+    }
+    .customGrid{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .paddingX{
+        padding: 2rem 0.5rem;
+    }
+    .textCenter{
+        text-align: center;
+    }
+    .customGap{
+        gap:0.5rem;
+    }
+    .paddingCard{
+        padding: 1.25rem 1rem;
+    }
+    .imagePlant{
+        height: 15rem;
+    }
+    .hiddenFilter{
+        display: none;
+    }
+    .hiddenCollapseFilter{
+        display: block;
+    }
+    .gapFilter{
+        gap:2rem;
+    }
+    .paddingForFilter{
+        padding: 0rem 1rem;
+    }
+    .gapItem{
+        gap:1.5rem;
+    }
+    .textStart{
+        text-align: start;
+    }
+}
+
+
+@media(min-width:801px) and (max-width:1280px){
+    .paddingText{
+        padding: 2rem 1rem;
+    }
+    .gridTwo{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .gridThree{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .paddingForX{
+        padding: 1rem;
+    }
+    .imagePlant{
+        height: 20rem;
+    }
+    .gapForFilter{
+        gap:1.5rem;
+    }
+    .textFilter{
+        font-size: 1.5rem;
+    } 
+    .flexCol{
+        display: flex;
+        flex-direction: column;
+    }
+    .secondGap{
+        gap:1rem;
+    }
+}
+
+
+@media (max-width: 800px){
+    #header {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        z-index: 40;
+    } 
+    #header::before {
+        content: "";
+        position: absolute;
+        width: 1.563rem;
+        height: 0.2rem;
+        background: #1B4B66;
+        transform: translateY(-0.625rem);
+        transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }  
+    #header::after {
+        content: "";
+        position: absolute;
+        width: 1.563rem;
+        height: 0.2rem;
+        background: #1B4B66;
+        box-shadow: 0 0.625rem 0 0;
+        color: #1B4B66;
+        transition: 0.4s;
+    }
+    .active#header::before {
+        transform: rotate(45deg);
+        transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .active#header::after {
+        transform: rotate(-45deg);
+        transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        box-shadow: none;
+    }
+    .active#header{
+       position: absolute;
+       top:2rem;
+       right: 2rem;
+    }
+    #menu {
+        position: fixed;
+        top: 0rem;
+        left: 100%;
+        width: 100%;
+        height: 100vh;
+        background: #639599;
+        z-index: 30;
+        display: flex;
+        align-items: flex-start;
+    }
+    #menu ul {
+        position: relative;
+        margin-top: 2rem;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+        height: auto;
+        }
+    #menu ul li {
+        list-style: none;
+        color: white;
+        padding: 0.9rem 2.5rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+        }
+    .active#menu {
+        left: 0;
+    }
+    .no-scroll{
+        overflow: hidden;
+    }
+    .textMainSite{
+        margin-left: 0rem;
+    }
+}
